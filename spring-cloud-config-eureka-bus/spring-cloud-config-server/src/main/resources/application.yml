@@ -7,20 +7,20 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ityouknow/spring-cloud-starter/     # 配置git仓库的地址
+          uri: https://github.com/junyi5257/spring-cloud-examples/     # 配置git仓库的地址
           search-paths: config-repo                             # git仓库地址下的相对地址，可以配置多个，用,分割。
-          username: yourname                                        # git仓库的账号
-          password: yourpass                                    # git仓库的密码
+          #username: yourname                                        # git仓库的账号
+          #password: yourpass                                    # git仓库的密码
   rabbitmq:
-    host: 192.168.0.6
+    host: 172.18.83.82
     port: 5672
     username: admin
-    password: 123456
+    password: admin
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8000/eureka/   ## 注册中心eurka地址
+      defaultZone: http://localhost:8000/eureka/          # 注册中心eurka地址
 
 
 management:
